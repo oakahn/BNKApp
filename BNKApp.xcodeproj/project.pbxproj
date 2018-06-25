@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04632622BD18F2ABF0778D8C /* Pods_BNKApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6DB24CD7C853BB0720CA4F /* Pods_BNKApp.framework */; };
 		9CBF7C9E20E0C43A00BFAC2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBF7C9D20E0C43A00BFAC2F /* AppDelegate.swift */; };
 		9CBF7CA020E0C43A00BFAC2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBF7C9F20E0C43A00BFAC2F /* ViewController.swift */; };
 		9CBF7CA320E0C43A00BFAC2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBF7CA120E0C43A00BFAC2F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B6DB24CD7C853BB0720CA4F /* Pods_BNKApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNKApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBF7C9A20E0C43A00BFAC2F /* BNKApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BNKApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBF7C9D20E0C43A00BFAC2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBF7C9F20E0C43A00BFAC2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		9CBF7CA420E0C43C00BFAC2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CBF7CA720E0C43C00BFAC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CBF7CA920E0C43C00BFAC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBDAA83683A95A8353811301 /* Pods-BNKApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNKApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BNKApp/Pods-BNKApp.release.xcconfig"; sourceTree = "<group>"; };
+		D725D127D8AD310BD160EEC1 /* Pods-BNKApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNKApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BNKApp/Pods-BNKApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04632622BD18F2ABF0778D8C /* Pods_BNKApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20FE450A050EB49D8A9F67AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D725D127D8AD310BD160EEC1 /* Pods-BNKApp.debug.xcconfig */,
+				CBDAA83683A95A8353811301 /* Pods-BNKApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9CBF7C9120E0C43A00BFAC2F = {
 			isa = PBXGroup;
 			children = (
 				9CBF7C9C20E0C43A00BFAC2F /* BNKApp */,
 				9CBF7C9B20E0C43A00BFAC2F /* Products */,
+				20FE450A050EB49D8A9F67AD /* Pods */,
+				DF6317415F09A3F8470C4935 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = BNKApp;
 			sourceTree = "<group>";
 		};
+		DF6317415F09A3F8470C4935 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B6DB24CD7C853BB0720CA4F /* Pods_BNKApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CBF7CAC20E0C43C00BFAC2F /* Build configuration list for PBXNativeTarget "BNKApp" */;
 			buildPhases = (
+				B92CD005A2C135003A76B88F /* [CP] Check Pods Manifest.lock */,
 				9CBF7C9620E0C43A00BFAC2F /* Sources */,
 				9CBF7C9720E0C43A00BFAC2F /* Frameworks */,
 				9CBF7C9820E0C43A00BFAC2F /* Resources */,
+				5A4753385C38A9DECCDAC291 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A4753385C38A9DECCDAC291 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BNKApp/Pods-BNKApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BNKApp/Pods-BNKApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B92CD005A2C135003A76B88F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BNKApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CBF7C9620E0C43A00BFAC2F /* Sources */ = {
@@ -278,14 +349,12 @@
 		};
 		9CBF7CAD20E0C43C00BFAC2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D725D127D8AD310BD160EEC1 /* Pods-BNKApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BNKApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.BNKApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -295,14 +364,12 @@
 		};
 		9CBF7CAE20E0C43C00BFAC2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBDAA83683A95A8353811301 /* Pods-BNKApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BNKApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.BNKApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

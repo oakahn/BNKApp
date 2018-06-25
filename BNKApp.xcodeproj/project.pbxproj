@@ -13,6 +13,7 @@
 		9CBF7CA320E0C43A00BFAC2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBF7CA120E0C43A00BFAC2F /* Main.storyboard */; };
 		9CBF7CA520E0C43C00BFAC2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBF7CA420E0C43C00BFAC2F /* Assets.xcassets */; };
 		9CBF7CA820E0C43C00BFAC2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBF7CA620E0C43C00BFAC2F /* LaunchScreen.storyboard */; };
+		9CBF7CB120E0CA4200BFAC2F /* HistoryBNK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBF7CB020E0CA4200BFAC2F /* HistoryBNK.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9CBF7CA420E0C43C00BFAC2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CBF7CA720E0C43C00BFAC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CBF7CA920E0C43C00BFAC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CBF7CB020E0CA4200BFAC2F /* HistoryBNK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryBNK.swift; sourceTree = "<group>"; };
 		CBDAA83683A95A8353811301 /* Pods-BNKApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNKApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BNKApp/Pods-BNKApp.release.xcconfig"; sourceTree = "<group>"; };
 		D725D127D8AD310BD160EEC1 /* Pods-BNKApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNKApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BNKApp/Pods-BNKApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 		9CBF7C9C20E0C43A00BFAC2F /* BNKApp */ = {
 			isa = PBXGroup;
 			children = (
+				9CBF7CAF20E0C9E400BFAC2F /* dataLayer */,
 				9CBF7C9D20E0C43A00BFAC2F /* AppDelegate.swift */,
 				9CBF7C9F20E0C43A00BFAC2F /* ViewController.swift */,
 				9CBF7CA120E0C43A00BFAC2F /* Main.storyboard */,
@@ -78,6 +81,14 @@
 				9CBF7CA920E0C43C00BFAC2F /* Info.plist */,
 			);
 			path = BNKApp;
+			sourceTree = "<group>";
+		};
+		9CBF7CAF20E0C9E400BFAC2F /* dataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9CBF7CB020E0CA4200BFAC2F /* HistoryBNK.swift */,
+			);
+			path = dataLayer;
 			sourceTree = "<group>";
 		};
 		DF6317415F09A3F8470C4935 /* Frameworks */ = {
@@ -207,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CBF7CA020E0C43A00BFAC2F /* ViewController.swift in Sources */,
+				9CBF7CB120E0CA4200BFAC2F /* HistoryBNK.swift in Sources */,
 				9CBF7C9E20E0C43A00BFAC2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +366,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BNKApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.BNKApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -369,7 +384,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BNKApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.BNKApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dCD-Od-Wpa">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,14 +10,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash ScreenVC-->
         <scene sceneID="4lD-u2-8z4">
             <objects>
-                <viewController id="Sq5-im-Abb" sceneMemberID="viewController">
+                <viewController id="Sq5-im-Abb" customClass="SplashScreenVC" customModule="BNKApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0zd-tY-6jc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashImage2" translatesAutoresizingMaskIntoConstraints="NO" id="izD-eY-8LS">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rHc-6O-HH4" firstAttribute="trailing" secondItem="izD-eY-8LS" secondAttribute="trailing" id="9VK-2w-b8Q"/>
+                            <constraint firstItem="izD-eY-8LS" firstAttribute="leading" secondItem="rHc-6O-HH4" secondAttribute="leading" id="b03-Mc-BE1"/>
+                            <constraint firstItem="izD-eY-8LS" firstAttribute="top" secondItem="rHc-6O-HH4" secondAttribute="top" id="tMW-ZC-jeE"/>
+                            <constraint firstItem="rHc-6O-HH4" firstAttribute="bottom" secondItem="izD-eY-8LS" secondAttribute="bottom" id="xfE-fT-vyE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rHc-6O-HH4"/>
                     </view>
                     <navigationItem key="navigationItem" id="R6v-nY-WsF"/>
@@ -29,10 +40,9 @@
         <!--Navigation Controller-->
         <scene sceneID="NeY-eW-3iH">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dCD-Od-Wpa" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="dCD-Od-Wpa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xH4-WB-OxN">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -45,4 +55,7 @@
             <point key="canvasLocation" x="181.59999999999999" y="152.47376311844079"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="splashImage2" width="640" height="960"/>
+    </resources>
 </document>

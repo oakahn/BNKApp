@@ -12,12 +12,13 @@ protocol SplashScreenProtocol: BaseVCProtocol {
     
 }
 
-class SplashScreen: BaseVC {
+class SplashScreenVC: BaseVC {
     
     lazy var presenter = SplashScreenPresenter(self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        displayLoading(message: "", hasBg: true)
     }
     
     override func didReceiveMemoryWarning() {
@@ -25,6 +26,6 @@ class SplashScreen: BaseVC {
     }
 }
 
-extension SplashScreen: SplashScreenProtocol {
+extension SplashScreenVC: SplashScreenProtocol {
     
 }

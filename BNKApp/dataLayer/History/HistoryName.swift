@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class HistoryBNK: Mappable {
+class HistoryName: Mappable {
     
     var member:DetailHistoryBNK?
     
@@ -25,12 +25,19 @@ class DetailHistoryBNK: Mappable {
     var firstName: DetailFirstName?
     var lastName: DetailLastName?
     var nickName: DetailNickName?
+    var birthday: String?
+    var height: String?
+    var province: String?
     
     required init?(map: Map) {}
     
     func mapping(map: Map) {
         firstName <- map["first_name"]
         lastName <- map["last_name"]
+        nickName <- map["nickname"]
+        birthday <- map["birth_date"]
+        height <- map["height"]
+        province <- map["province"]
     }
 }
 
@@ -70,14 +77,5 @@ class DetailNickName: Mappable {
     func mapping(map: Map) {
         th <- map["th"]
         en <- map["en"]
-    }
-}
-
-class BIO: Mappable {
-    
-    required init?(map: Map) {}
-    
-    func mapping(map: Map) {
-        
     }
 }

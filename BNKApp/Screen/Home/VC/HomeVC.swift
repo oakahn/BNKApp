@@ -39,13 +39,20 @@ extension HomeVC: HomeVCProtocol, UITableViewDelegate, UITableViewDataSource {
         eventListTable.reloadData()
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listItem.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = listItem[indexPath.row].title
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ListEventCell else {
+            return UITableViewCell()
+        }
+        cell.eventLabel.text = listItem[indexPath.row].title
+        cell.dateLabel.text = listItem[indexPath.row].date
         return cell
     }
 }

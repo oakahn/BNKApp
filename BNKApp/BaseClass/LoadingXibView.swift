@@ -33,11 +33,12 @@ import Foundation
         self.backdropImages.isHidden = false
         self.activityDescriptionLabels.text = message
         if hasBg {
+            self.backdropImages.alpha = 0.5
             self.activityDescriptionLabels.textColor = UIColor.white
-            self.acitivityIndicatorViews.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.white
+//            self.acitivityIndicatorViews.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.white
         } else {
             self.backdropImages.isHidden = true
-            self.acitivityIndicatorViews.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+//            self.acitivityIndicatorViews.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
             self.activityDescriptionLabels.textColor = UIColor.lightGray
         }
         self.parentView?.addSubview(self)

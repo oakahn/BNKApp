@@ -9,15 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class EventBNK: Mappable {
-    
-    var event: [EventDetail]?
-    
-    required init?(map: Map) {}
-    
-    func mapping(map: Map) {
-//        event <- map[]
-    }
+class EventBNK {
 }
 
 class EventDetail: Mappable {

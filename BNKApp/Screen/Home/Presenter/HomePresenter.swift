@@ -11,7 +11,7 @@ import ObjectMapper
 import Alamofire
 
 protocol HomePresenterProtocol {
-    func getDetailHome()
+    func getDetailHomeService()
 }
 
 class HomePresenter {
@@ -24,19 +24,13 @@ class HomePresenter {
 }
 
 extension HomePresenter: HomePresenterProtocol {
-    func getDetailHome() {
+    func getDetailHomeService() {
         let url = "https://ticket.bnk48.com/theater/function_theater.php?method=get_event_calendar"
-        
         Alamofire.request(url).responseJSON { (res) in
-            print(res.result.value)
-            print(res)
-//            guard let detail = Mapper<[EventDetail]>().map(JSONObject: res) else {
             guard let detail = Mapper<EventDetail>().mapArray(JSONObject: res.result.value) else {
-                print("Super man empty")
                 return
             }
-            print("Super man", detail)
+            self.view?.getDetailEventBNK(detail)
         }
-//        let detail = Mapper<EventBNK>().map(JSONObject: {})
     }
 }

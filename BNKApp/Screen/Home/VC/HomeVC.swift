@@ -14,12 +14,18 @@ protocol HomeVCProtocol: BaseVCProtocol {
 
 class HomeVC: BaseVC {
     
+    lazy var presenter = HomePresenter(self)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        presenter.getDetailHome()
     }
 }
 

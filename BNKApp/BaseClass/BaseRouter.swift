@@ -11,16 +11,10 @@ import UIKit
 
 
 class BaseRouter {
-    let appstart = "StartApp"
-    let transfer = "Transfer"
-    let history = "History"
-    let createTransfer = "CreateTransfer"
+    let home = "Home"
     
     let routes: [String: String] = [
-        "StartApp": "StartAppVC",
-        "Transfer": "TransferVC",
-        "History": "HistoryVC",
-        "CreateTransfer": "CreateTransferVC"
+        "Home": "HomeVC"
     ]
     
     internal weak var viewController: UIViewController?

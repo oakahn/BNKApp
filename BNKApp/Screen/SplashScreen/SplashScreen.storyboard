@@ -13,7 +13,7 @@
         <!--Splash ScreenVC-->
         <scene sceneID="4lD-u2-8z4">
             <objects>
-                <viewController id="Sq5-im-Abb" customClass="SplashScreenVC" customModule="BNKApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashScreenVC" id="Sq5-im-Abb" customClass="SplashScreenVC" customModule="BNKApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0zd-tY-6jc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

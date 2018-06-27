@@ -6,6 +6,7 @@ protocol BaseVCProtocol: class {
     func displayBlockMessage(title: String, message: String)
     func hideLoading()
     func displayMessageAndHide(title: String, message: String)
+    func displayLoading(message: String, hasBg: Bool)
 }
 
 class BaseVC: UIViewController, BaseVCProtocol {

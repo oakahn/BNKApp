@@ -34,10 +34,7 @@ extension HomePresenter: HomePresenterProtocol {
                 return
             }
             guard statusService < 400 else { return }
-            
-            guard let detail = Mapper<EventDetail>().mapArray(JSONObject: res.result.value) else {
-                return
-            }
+            guard let detail = Mapper<EventDetail>().mapArray(JSONObject: res.result.value) else { return }
             self.view?.getDetailEventBNK(detail)
         }
     }

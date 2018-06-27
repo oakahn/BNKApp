@@ -13,6 +13,7 @@
 		9C1671DB20E33BBA002ED8B6 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1671DA20E33BBA002ED8B6 /* HistoryPresenter.swift */; };
 		9C1671DD20E341C4002ED8B6 /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1671DC20E341C4002ED8B6 /* HistoryViewCell.swift */; };
 		9C1F11E820E2906100BA158E /* ListEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F11E720E2906100BA158E /* ListEventCell.swift */; };
+		9C465DA820E394BE009FDD11 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C465DA720E394BE009FDD11 /* HomeTabBar.swift */; };
 		9C4A3F5620E13EA9005E3625 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4A3F5520E13EA9005E3625 /* SplashScreen.storyboard */; };
 		9C4A3F5820E13F13005E3625 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A3F5720E13F13005E3625 /* SplashScreenVC.swift */; };
 		9C4A3F6220E13FDA005E3625 /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A3F5A20E13FDA005E3625 /* BaseClass.swift */; };
@@ -46,7 +47,7 @@
 		9C4A3F9420E143F8005E3625 /* Kanit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C4A3F8120E143F8005E3625 /* Kanit-SemiBold.ttf */; };
 		9C4A3F9720E14415005E3625 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A3F9520E14415005E3625 /* Font.swift */; };
 		9C4A3F9820E14415005E3625 /* UiApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A3F9620E14415005E3625 /* UiApplication.swift */; };
-		9C74F38520E1FA9C005619DE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C74F38420E1FA9C005619DE /* Home.storyboard */; };
+		9C74F38520E1FA9C005619DE /* HomeTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C74F38420E1FA9C005619DE /* HomeTabBar.storyboard */; };
 		9C74F38720E1FAD6005619DE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C74F38620E1FAD6005619DE /* HomeVC.swift */; };
 		9C74F38920E1FB35005619DE /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C74F38820E1FB35005619DE /* HomePresenter.swift */; };
 		9C74F38C20E21EB0005619DE /* EventBNK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C74F38B20E21EB0005619DE /* EventBNK.swift */; };
@@ -66,6 +67,7 @@
 		9C1671DA20E33BBA002ED8B6 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
 		9C1671DC20E341C4002ED8B6 /* HistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
 		9C1F11E720E2906100BA158E /* ListEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventCell.swift; sourceTree = "<group>"; };
+		9C465DA720E394BE009FDD11 /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
 		9C4A3F5520E13EA9005E3625 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		9C4A3F5720E13F13005E3625 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		9C4A3F5A20E13FDA005E3625 /* BaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
@@ -99,7 +101,7 @@
 		9C4A3F8120E143F8005E3625 /* Kanit-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-SemiBold.ttf"; sourceTree = "<group>"; };
 		9C4A3F9520E14415005E3625 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		9C4A3F9620E14415005E3625 /* UiApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiApplication.swift; sourceTree = "<group>"; };
-		9C74F38420E1FA9C005619DE /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		9C74F38420E1FA9C005619DE /* HomeTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBar.storyboard; sourceTree = "<group>"; };
 		9C74F38620E1FAD6005619DE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9C74F38820E1FB35005619DE /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		9C74F38B20E21EB0005619DE /* EventBNK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBNK.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		9C4A3F5020E13E3B005E3625 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9C4A3F5120E13E55005E3625 /* SplashScreen */,
 				9C1671D220E33AC7002ED8B6 /* History */,
 				9C74F38020E1FA6E005619DE /* Home */,
 			);
@@ -265,8 +268,7 @@
 				9C74F38320E1FA8A005619DE /* Router */,
 				9C74F38220E1FA84005619DE /* Presenter */,
 				9C74F38120E1FA7E005619DE /* VC */,
-				9C74F38420E1FA9C005619DE /* Home.storyboard */,
-				9C4A3F5120E13E55005E3625 /* SplashScreen */,
+				9C74F38420E1FA9C005619DE /* HomeTabBar.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -276,6 +278,7 @@
 			children = (
 				9C74F38620E1FAD6005619DE /* HomeVC.swift */,
 				9C1F11E720E2906100BA158E /* ListEventCell.swift */,
+				9C465DA720E394BE009FDD11 /* HomeTabBar.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -432,7 +435,7 @@
 				9C4A3F8320E143F8005E3625 /* Kanit-Italic.ttf in Resources */,
 				9C4A3F8B20E143F8005E3625 /* Kanit-MediumItalic.ttf in Resources */,
 				9CBF7CA820E0C43C00BFAC2F /* LaunchScreen.storyboard in Resources */,
-				9C74F38520E1FA9C005619DE /* Home.storyboard in Resources */,
+				9C74F38520E1FA9C005619DE /* HomeTabBar.storyboard in Resources */,
 				9C4A3F6720E13FDA005E3625 /* LoadingXibView.xib in Resources */,
 				9C4A3F8420E143F8005E3625 /* Kanit-ExtraLightItalic.ttf in Resources */,
 				9C1671D720E33AF6002ED8B6 /* History.storyboard in Resources */,
@@ -513,6 +516,7 @@
 				9C4A3F9720E14415005E3625 /* Font.swift in Sources */,
 				9C4A3F6B20E1402E005E3625 /* SplashScreenPresenter.swift in Sources */,
 				9C74F38720E1FAD6005619DE /* HomeVC.swift in Sources */,
+				9C465DA820E394BE009FDD11 /* HomeTabBar.swift in Sources */,
 				9C74F38C20E21EB0005619DE /* EventBNK.swift in Sources */,
 				9C4A3F6520E13FDA005E3625 /* BaseRouter.swift in Sources */,
 				9C4A3F6220E13FDA005E3625 /* BaseClass.swift in Sources */,

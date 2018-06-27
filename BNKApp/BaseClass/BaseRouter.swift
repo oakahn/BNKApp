@@ -12,9 +12,11 @@ import UIKit
 
 class BaseRouter {
     let home = "Home"
+    let homeTab = "HomeTabBar"
     
     let routes: [String: String] = [
-        "Home": "HomeVC"
+        "Home": "HomeVC",
+        "HomeTabBar": "HomeTabBarVC"
     ]
     
     internal weak var viewController: UIViewController?

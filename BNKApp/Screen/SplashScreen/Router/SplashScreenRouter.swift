@@ -14,6 +14,6 @@ protocol SplashScreenRouterProtocol {
 
 class SplashScreenRouter: BaseRouter, SplashScreenRouterProtocol {
     func redirectToHome() {
-        redirectTo(name: self.home)
+        redirectTo(name: self.homeTab)
     }
 }

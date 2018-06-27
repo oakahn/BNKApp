@@ -10,6 +10,7 @@ import UIKit
 
 protocol HomeVCProtocol: BaseVCProtocol {
     func getDetailEventBNK(_ list: [EventDetail])
+    func connectNetwork()
 }
 
 class HomeVC: BaseVC {
@@ -36,6 +37,11 @@ class HomeVC: BaseVC {
 extension HomeVC: HomeVCProtocol, UITableViewDelegate, UITableViewDataSource {
     func getDetailEventBNK(_ list: [EventDetail]) {
         listItem = list
+        eventListTable.reloadData()
+    }
+    
+    func connectNetwork() {
+        presenter.getDetailHomeService()
         eventListTable.reloadData()
     }
     

@@ -8,9 +8,10 @@
 
 import Foundation
 import Alamofire
+import ObjectMapper
 
 protocol HistoryPresenterProtocol {
-    
+    func getHistoryBNK(url: String)
 }
 
 class HistoryPresenter {
@@ -24,4 +25,9 @@ class HistoryPresenter {
 
 extension HistoryPresenter: HistoryPresenterProtocol {
     
+    func getHistoryBNK(url: String) {
+        Alamofire.request(url).responseJSON { (res) in
+            let detail = Mapper<HistoryName>().map(JSONObject: res)
+        }
+    }
 }

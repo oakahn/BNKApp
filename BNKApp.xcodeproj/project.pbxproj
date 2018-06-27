@@ -177,7 +177,6 @@
 			children = (
 				9C1671D220E33AC7002ED8B6 /* History */,
 				9C74F38020E1FA6E005619DE /* Home */,
-				9C4A3F5120E13E55005E3625 /* SplashScreen */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -267,6 +266,7 @@
 				9C74F38220E1FA84005619DE /* Presenter */,
 				9C74F38120E1FA7E005619DE /* VC */,
 				9C74F38420E1FA9C005619DE /* Home.storyboard */,
+				9C4A3F5120E13E55005E3625 /* SplashScreen */,
 			);
 			path = Home;
 			sourceTree = "<group>";

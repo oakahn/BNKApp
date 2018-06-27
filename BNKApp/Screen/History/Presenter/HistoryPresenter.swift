@@ -15,5 +15,13 @@ protocol HistoryPresenterProtocol {
 
 class HistoryPresenter {
     
+    var view: HistoryVCProtocol?
+    
+    init(_ view: HistoryVCProtocol) {
+        self.view = view
+    }
 }
 
+extension HistoryPresenter: HistoryPresenterProtocol {
+    
+}

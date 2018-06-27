@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		04632622BD18F2ABF0778D8C /* Pods_BNKApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B6DB24CD7C853BB0720CA4F /* Pods_BNKApp.framework */; };
+		9C1671D720E33AF6002ED8B6 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1671D620E33AF6002ED8B6 /* History.storyboard */; };
+		9C1671D920E33B43002ED8B6 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1671D820E33B43002ED8B6 /* HistoryVC.swift */; };
+		9C1671DB20E33BBA002ED8B6 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1671DA20E33BBA002ED8B6 /* HistoryPresenter.swift */; };
 		9C1F11E820E2906100BA158E /* ListEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F11E720E2906100BA158E /* ListEventCell.swift */; };
 		9C4A3F5620E13EA9005E3625 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4A3F5520E13EA9005E3625 /* SplashScreen.storyboard */; };
 		9C4A3F5820E13F13005E3625 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A3F5720E13F13005E3625 /* SplashScreenVC.swift */; };
@@ -57,6 +60,9 @@
 
 /* Begin PBXFileReference section */
 		2B6DB24CD7C853BB0720CA4F /* Pods_BNKApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNKApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1671D620E33AF6002ED8B6 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		9C1671D820E33B43002ED8B6 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		9C1671DA20E33BBA002ED8B6 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
 		9C1F11E720E2906100BA158E /* ListEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventCell.swift; sourceTree = "<group>"; };
 		9C4A3F5520E13EA9005E3625 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		9C4A3F5720E13F13005E3625 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
@@ -129,9 +135,44 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9C1671D220E33AC7002ED8B6 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				9C1671D520E33ADF002ED8B6 /* Router */,
+				9C1671D420E33AD8002ED8B6 /* Presenter */,
+				9C1671D320E33AD3002ED8B6 /* VC */,
+				9C1671D620E33AF6002ED8B6 /* History.storyboard */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		9C1671D320E33AD3002ED8B6 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9C1671D820E33B43002ED8B6 /* HistoryVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		9C1671D420E33AD8002ED8B6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9C1671DA20E33BBA002ED8B6 /* HistoryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9C1671D520E33ADF002ED8B6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		9C4A3F5020E13E3B005E3625 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9C1671D220E33AC7002ED8B6 /* History */,
 				9C74F38020E1FA6E005619DE /* Home */,
 				9C4A3F5120E13E55005E3625 /* SplashScreen */,
 			);
@@ -391,6 +432,7 @@
 				9C74F38520E1FA9C005619DE /* Home.storyboard in Resources */,
 				9C4A3F6720E13FDA005E3625 /* LoadingXibView.xib in Resources */,
 				9C4A3F8420E143F8005E3625 /* Kanit-ExtraLightItalic.ttf in Resources */,
+				9C1671D720E33AF6002ED8B6 /* History.storyboard in Resources */,
 				9C4A3F9020E143F8005E3625 /* Kanit-Thin.ttf in Resources */,
 				9C4A3F5620E13EA9005E3625 /* SplashScreen.storyboard in Resources */,
 				9C4A3F9320E143F8005E3625 /* Kanit-Light.ttf in Resources */,
@@ -471,10 +513,12 @@
 				9C4A3F6520E13FDA005E3625 /* BaseRouter.swift in Sources */,
 				9C4A3F6220E13FDA005E3625 /* BaseClass.swift in Sources */,
 				9C4A3F6D20E1418E005E3625 /* SplashScreenRouter.swift in Sources */,
+				9C1671DB20E33BBA002ED8B6 /* HistoryPresenter.swift in Sources */,
 				9C4A3F6320E13FDA005E3625 /* LoadingXibView.swift in Sources */,
 				9CBF7CB120E0CA4200BFAC2F /* HistoryName.swift in Sources */,
 				9CFB8F0920E1130D00D96731 /* HistoryInfo.swift in Sources */,
 				9C4A3F6820E13FDA005E3625 /* BaseXibView.swift in Sources */,
+				9C1671D920E33B43002ED8B6 /* HistoryVC.swift in Sources */,
 				9C4A3F5820E13F13005E3625 /* SplashScreenVC.swift in Sources */,
 				9C4A3F6420E13FDA005E3625 /* ScreenError.swift in Sources */,
 				9C74F38920E1FB35005619DE /* HomePresenter.swift in Sources */,

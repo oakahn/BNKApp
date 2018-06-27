@@ -9,9 +9,6 @@
 import Foundation
 import ObjectMapper
 
-class EventBNK {
-}
-
 class EventDetail: Mappable {
     
     var date: String?

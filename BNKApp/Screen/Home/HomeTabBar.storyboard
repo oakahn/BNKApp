@@ -83,7 +83,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g4R-Rv-SAh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="event" id="DCL-fe-I2m"/>
+                    <tabBarItem key="tabBarItem" title="event" image="eventHomeMain" id="DCL-fe-I2m"/>
                     <navigationItem key="navigationItem" id="wwL-Vj-CEb"/>
                     <connections>
                         <outlet property="eventListTable" destination="lHX-JR-wQu" id="4Pg-sM-0RU"/>
@@ -125,11 +125,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y58-TY-Xqr"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ประวัติ" id="EZK-0b-YEh"/>
+                    <tabBarItem key="tabBarItem" title="ประวัติ" image="eventHomeMain" id="EZK-0b-YEh">
+                        <color key="badgeColor" red="0.98768347501754761" green="0.91767436265945435" blue="0.91763830184936523" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEd-9u-XM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-882" y="725"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="2g5-qm-0nt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="History" id="0aY-J7-VO2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ZJi-q1-rcu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CkO-ph-bmP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714" y="1335"/>
         </scene>
         <!--Home Tab Bar-->
         <scene sceneID="JCX-Ot-kMU">
@@ -139,11 +151,13 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ddf-Y9-ycf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.93531507253646851" green="0.56394374370574951" blue="0.64705657958984375" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
+                        <outlet property="mainTabBar" destination="ddf-Y9-ycf" id="DFv-46-aSr"/>
                         <segue destination="oGA-mu-3Xf" kind="relationship" relationship="viewControllers" id="eIG-Ef-kqn"/>
                         <segue destination="kEZ-9z-wUy" kind="relationship" relationship="viewControllers" id="NB0-T7-md9"/>
+                        <segue destination="0aY-J7-VO2" kind="relationship" relationship="viewControllers" id="rNO-uW-shC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twr-ia-H4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -151,4 +165,7 @@
             <point key="canvasLocation" x="-1982" y="307"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="eventHomeMain" width="32" height="32"/>
+    </resources>
 </document>

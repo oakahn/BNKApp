@@ -22,6 +22,7 @@ class HistoryVC: BaseVC {
         super.viewDidLoad()
         historyTableView.dataSource = self
         historyTableView.delegate = self
+//        presenter.getHistoryBNK(url: "")
     }
     
     override func didReceiveMemoryWarning() {

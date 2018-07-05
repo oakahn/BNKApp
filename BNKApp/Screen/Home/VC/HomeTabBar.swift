@@ -10,11 +10,20 @@ import UIKit
 
 class HomeTabBar: UITabBarController {
     
+    @IBOutlet weak var mainTabBar: UITabBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func setup() {
+        mainTabBar.tintColor = UIColor.bnkColor
+        mainTabBar.unselectedItemTintColor = UIColor.grayLight
+        mainTabBar.barTintColor = UIColor.white
     }
 }

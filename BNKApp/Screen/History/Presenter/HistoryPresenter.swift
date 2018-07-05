@@ -26,7 +26,8 @@ class HistoryPresenter {
 extension HistoryPresenter: HistoryPresenterProtocol {
     
     func getHistoryBNK(url: String) {
-        Alamofire.request(url).responseJSON { (res) in
+        let setURL = "https://www.api.bnk48.com/api/members/" + url
+        Alamofire.request(setURL).responseJSON { (res) in
             let detail = Mapper<HistoryName>().map(JSONObject: res)
         }
     }

@@ -12,9 +12,12 @@ class HistoryViewCell: UITableViewCell {
 
     @IBOutlet weak var historyImage: UIImageView!
     @IBOutlet weak var nameCell: UILabel!
+    @IBOutlet weak var uiView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        uiView.backgroundColor = UIColor.bnkColor
+        uiView.layer.cornerRadius = 5.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

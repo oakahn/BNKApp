@@ -11,13 +11,11 @@ import ObjectMapper
 
 class HistoryInfo: Mappable {
     
-    var favouriteFood: String?
-    var disLikeFood: String?
-    var favouriteGame: String?
-    var hobbies: String?
+    var favouriteFood: DetailFavouriteFood?
+    var disLikeFood: DetailDislikeFood?
+    var favouriteGame: DetailFavouriteGame?
+    var hobbies: DetailHobbies?
     var blood: String?
-    var instagram: String?
-    var image: String?
     
     required init?(map: Map) {}
     
@@ -27,7 +25,55 @@ class HistoryInfo: Mappable {
         favouriteGame <- map["favourite_games"]
         hobbies <- map["hobbies"]
         blood <- map["blood_group"]
-        instagram <- map["instagram"]
-        image <- map["profile_image"]
+    }
+}
+
+class DetailFavouriteFood: Mappable {
+    
+    var th: String?
+    var en: String?
+    
+    required init?(map: Map) {}
+    
+    func mapping(map: Map) {
+        en <- map["en"]
+        th <- map["th"]
+    }
+}
+
+class DetailDislikeFood: Mappable {
+    
+    var en: String?
+    var th: String?
+    
+    required init?(map: Map) {}
+    
+    func mapping(map: Map) {
+        en <- map["en"]
+        th <- map["th"]
+    }
+}
+
+class DetailFavouriteGame: Mappable {
+    var th: String?
+    var en: String?
+    
+    required init?(map: Map) {}
+    
+    func mapping(map: Map) {
+        en <- map["en"]
+        th <- map["th"]
+    }
+}
+
+class DetailHobbies: Mappable {
+    var th: String?
+    var en: String?
+    
+    required init?(map: Map) {}
+    
+    func mapping(map: Map) {
+        en <- map["en"]
+        th <- map["th"]
     }
 }

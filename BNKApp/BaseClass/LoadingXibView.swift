@@ -31,6 +31,7 @@ import Foundation
     
     func show(message: String,hasBg: Bool) {
         self.backdropImages.isHidden = false
+        self.activityDescriptionLabels.font = UIFont.kanitRegular10
         self.activityDescriptionLabels.text = message
         if hasBg {
             self.backdropImages.alpha = 0.5

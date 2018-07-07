@@ -12,9 +12,11 @@ class ListEventCell: UITableViewCell {
 
     @IBOutlet weak var eventLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var listEventView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        listEventView.layer.cornerRadius = 5.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

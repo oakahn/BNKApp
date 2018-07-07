@@ -13,6 +13,7 @@
 		9C1671DB20E33BBA002ED8B6 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1671DA20E33BBA002ED8B6 /* HistoryPresenter.swift */; };
 		9C1671DD20E341C4002ED8B6 /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1671DC20E341C4002ED8B6 /* HistoryViewCell.swift */; };
 		9C1F11E820E2906100BA158E /* ListEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F11E720E2906100BA158E /* ListEventCell.swift */; };
+		9C2DE5AF20EF60500063AFE0 /* GetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2DE5AE20EF60500063AFE0 /* GetImage.swift */; };
 		9C465DA820E394BE009FDD11 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C465DA720E394BE009FDD11 /* HomeTabBar.swift */; };
 		9C4A3F5620E13EA9005E3625 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4A3F5520E13EA9005E3625 /* SplashScreen.storyboard */; };
 		9C4A3F5820E13F13005E3625 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A3F5720E13F13005E3625 /* SplashScreenVC.swift */; };
@@ -58,6 +59,8 @@
 		9CBF7CA520E0C43C00BFAC2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBF7CA420E0C43C00BFAC2F /* Assets.xcassets */; };
 		9CBF7CA820E0C43C00BFAC2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBF7CA620E0C43C00BFAC2F /* LaunchScreen.storyboard */; };
 		9CBF7CB120E0CA4200BFAC2F /* HistoryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBF7CB020E0CA4200BFAC2F /* HistoryName.swift */; };
+		9CE5749520F0E2FA0055100E /* HistoryMemberRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5749420F0E2FA0055100E /* HistoryMemberRouter.swift */; };
+		9CE5749720F0E3450055100E /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE5749620F0E3450055100E /* HomeRouter.swift */; };
 		9CF7358B20EE4B5700FC547A /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7358A20EE4B5700FC547A /* HistoryRouter.swift */; };
 		9CF7359120EE4C6900FC547A /* HistoryMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF7359020EE4C6900FC547A /* HistoryMember.storyboard */; };
 		9CF7359320EE4C7A00FC547A /* HistoryMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7359220EE4C7A00FC547A /* HistoryMemberVC.swift */; };
@@ -72,6 +75,7 @@
 		9C1671DA20E33BBA002ED8B6 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
 		9C1671DC20E341C4002ED8B6 /* HistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
 		9C1F11E720E2906100BA158E /* ListEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventCell.swift; sourceTree = "<group>"; };
+		9C2DE5AE20EF60500063AFE0 /* GetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImage.swift; sourceTree = "<group>"; };
 		9C465DA720E394BE009FDD11 /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
 		9C4A3F5520E13EA9005E3625 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		9C4A3F5720E13F13005E3625 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 		9CBF7CA720E0C43C00BFAC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CBF7CA920E0C43C00BFAC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CBF7CB020E0CA4200BFAC2F /* HistoryName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryName.swift; sourceTree = "<group>"; };
+		9CE5749420F0E2FA0055100E /* HistoryMemberRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryMemberRouter.swift; sourceTree = "<group>"; };
+		9CE5749620F0E3450055100E /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		9CF7358A20EE4B5700FC547A /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
 		9CF7359020EE4C6900FC547A /* HistoryMember.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HistoryMember.storyboard; sourceTree = "<group>"; };
 		9CF7359220EE4C7A00FC547A /* HistoryMemberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryMemberVC.swift; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 		9C1671D220E33AC7002ED8B6 /* History */ = {
 			isa = PBXGroup;
 			children = (
+				9C2DE5AD20EF601E0063AFE0 /* Model */,
 				9C1671D520E33ADF002ED8B6 /* Router */,
 				9C1671D420E33AD8002ED8B6 /* Presenter */,
 				9C1671D320E33AD3002ED8B6 /* VC */,
@@ -185,13 +192,21 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		9C2DE5AD20EF601E0063AFE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C2DE5AE20EF60500063AFE0 /* GetImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9C4A3F5020E13E3B005E3625 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
 				9CF7358C20EE4C2700FC547A /* HistoryMember */,
-				9C4A3F5120E13E55005E3625 /* SplashScreen */,
 				9C1671D220E33AC7002ED8B6 /* History */,
 				9C74F38020E1FA6E005619DE /* Home */,
+				9C4A3F5120E13E55005E3625 /* SplashScreen */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -307,6 +322,7 @@
 		9C74F38320E1FA8A005619DE /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				9CE5749620F0E3450055100E /* HomeRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -340,14 +356,15 @@
 		9CBF7C9C20E0C43A00BFAC2F /* BNKApp */ = {
 			isa = PBXGroup;
 			children = (
-				9C4A3F6E20E143E4005E3625 /* Font */,
-				9C4A3F5920E13FB0005E3625 /* BaseClass */,
 				9C4A3F5020E13E3B005E3625 /* Screen */,
 				9CBF7CAF20E0C9E400BFAC2F /* dataLayer */,
+				9C4A3F5920E13FB0005E3625 /* BaseClass */,
+				9C4A3F6E20E143E4005E3625 /* Font */,
 				9CBF7C9F20E0C43A00BFAC2F /* ViewController.swift */,
 				9CBF7CA120E0C43A00BFAC2F /* Main.storyboard */,
 				9CBF7CA420E0C43C00BFAC2F /* Assets.xcassets */,
 				9CBF7CA620E0C43C00BFAC2F /* LaunchScreen.storyboard */,
+				9CBF7C9D20E0C43A00BFAC2F /* AppDelegate.swift */,
 				9CBF7CA920E0C43C00BFAC2F /* Info.plist */,
 			);
 			path = BNKApp;
@@ -392,6 +409,7 @@
 		9CF7358F20EE4C4D00FC547A /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				9CE5749420F0E2FA0055100E /* HistoryMemberRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -401,7 +419,6 @@
 			children = (
 				9CBF7CB020E0CA4200BFAC2F /* HistoryName.swift */,
 				9CFB8F0820E1130D00D96731 /* HistoryInfo.swift */,
-				9CBF7C9D20E0C43A00BFAC2F /* AppDelegate.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -568,16 +585,19 @@
 				9CF7359520EE4CD900FC547A /* HistoryMemberPresenter.swift in Sources */,
 				9C465DA820E394BE009FDD11 /* HomeTabBar.swift in Sources */,
 				9C74F38C20E21EB0005619DE /* EventBNK.swift in Sources */,
+				9CE5749720F0E3450055100E /* HomeRouter.swift in Sources */,
 				9C4A3F6520E13FDA005E3625 /* BaseRouter.swift in Sources */,
 				9C4A3F6220E13FDA005E3625 /* BaseClass.swift in Sources */,
 				9C4A3F6D20E1418E005E3625 /* SplashScreenRouter.swift in Sources */,
 				9C1671DB20E33BBA002ED8B6 /* HistoryPresenter.swift in Sources */,
 				9C4A3F6320E13FDA005E3625 /* LoadingXibView.swift in Sources */,
 				9CBF7CB120E0CA4200BFAC2F /* HistoryName.swift in Sources */,
+				9C2DE5AF20EF60500063AFE0 /* GetImage.swift in Sources */,
 				9CFB8F0920E1130D00D96731 /* HistoryInfo.swift in Sources */,
 				9CF7358B20EE4B5700FC547A /* HistoryRouter.swift in Sources */,
 				9C4A3F6820E13FDA005E3625 /* BaseXibView.swift in Sources */,
 				9C91CCCF20E3DD0D00D247D1 /* Color.swift in Sources */,
+				9CE5749520F0E2FA0055100E /* HistoryMemberRouter.swift in Sources */,
 				9C1671D920E33B43002ED8B6 /* HistoryVC.swift in Sources */,
 				9C4A3F5820E13F13005E3625 /* SplashScreenVC.swift in Sources */,
 				9C4A3F6420E13FDA005E3625 /* ScreenError.swift in Sources */,

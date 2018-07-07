@@ -11,7 +11,7 @@ import ObjectMapper
 
 class HistoryName: Mappable {
     
-    var member:DetailHistoryBNK?
+    var member: DetailHistoryBNK?
     
     required init?(map: Map) {}
     
@@ -28,6 +28,9 @@ class DetailHistoryBNK: Mappable {
     var birthday: String?
     var height: String?
     var province: String?
+    var historyInfo: HistoryInfo?
+    var instagram: String?
+    var image: String?
     
     required init?(map: Map) {}
     
@@ -38,6 +41,9 @@ class DetailHistoryBNK: Mappable {
         birthday <- map["birth_date"]
         height <- map["height"]
         province <- map["province"]
+        historyInfo <- map["bio"]
+        instagram <- map["instagram"]
+        image <- map["profile_image"]
     }
 }
 

@@ -6,21 +6,44 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--History Member-->
+        <!--History MemberVC-->
         <scene sceneID="A7x-3S-ja6">
             <objects>
-                <viewController storyboardIdentifier="HistoryMemberVC" id="05y-I4-gc2" customClass="HistoryMember" customModule="BNKApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryMemberVC" id="05y-I4-gc2" customClass="HistoryMemberVC" customModule="BNKApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bjr-fd-FgZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ldD-dH-9Cp">
+                                <rect key="frame" x="93.5" y="83.5" width="187.5" height="167"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xk7-w0-Sr0">
+                                <rect key="frame" x="5" y="260.5" width="365" height="401.5"/>
+                                <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dbl-cY-pxU" firstAttribute="trailing" secondItem="xk7-w0-Sr0" secondAttribute="trailing" constant="5" id="92x-DA-6fe"/>
+                            <constraint firstItem="xk7-w0-Sr0" firstAttribute="top" secondItem="ldD-dH-9Cp" secondAttribute="bottom" constant="10" id="GOg-Ak-nBx"/>
+                            <constraint firstItem="ldD-dH-9Cp" firstAttribute="centerY" secondItem="Bjr-fd-FgZ" secondAttribute="centerY" multiplier="1:2" id="Jvt-NJ-dbY"/>
+                            <constraint firstItem="xk7-w0-Sr0" firstAttribute="leading" secondItem="dbl-cY-pxU" secondAttribute="leading" constant="5" id="P6Q-Nq-I0M"/>
+                            <constraint firstItem="ldD-dH-9Cp" firstAttribute="height" secondItem="Bjr-fd-FgZ" secondAttribute="height" multiplier="1:4" id="uVw-Qe-h7b"/>
+                            <constraint firstItem="dbl-cY-pxU" firstAttribute="bottom" secondItem="xk7-w0-Sr0" secondAttribute="bottom" constant="5" id="uiu-Lo-dKR"/>
+                            <constraint firstItem="ldD-dH-9Cp" firstAttribute="centerX" secondItem="Bjr-fd-FgZ" secondAttribute="centerX" id="xLA-m1-8Ve"/>
+                            <constraint firstItem="ldD-dH-9Cp" firstAttribute="width" secondItem="Bjr-fd-FgZ" secondAttribute="width" multiplier="1:2" id="yAn-hc-1oB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dbl-cY-pxU"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mon-Xu-dQ4"/>
+                    <connections>
+                        <outlet property="memberImage" destination="ldD-dH-9Cp" id="UqD-dc-kYR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iqX-02-pQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

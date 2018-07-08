@@ -28,6 +28,11 @@ extension HistoryPresenter: HistoryPresenterProtocol {
     func getHistoryBNK(url: String) {
         let setURL = "https://www.api.bnk48.com/api/members/" + url
         Alamofire.request(setURL).responseJSON { (res) in
+            guard let statusService = res.response?.statusCode else {
+                self.view?.displayMessage(title: "Service Error", message: "Disconnect Network")
+                return
+            }
+            guard statusService < 400 else { return }
             guard let detail = Mapper<HistoryName>().map(JSONObject: res.result.value) else {
                 return
             }

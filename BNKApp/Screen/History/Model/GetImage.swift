@@ -8,8 +8,12 @@
 
 import UIKit
 
+struct ListData {
+    var listItem: [String] = ["cherprang",
+                              "noey"]
+}
+
 extension HistoryVC {
-    
     func getImage(_ name: Int) -> UIImage {
         return UIImage(named: listHistoryBNK[name]) ?? UIImage()
     }

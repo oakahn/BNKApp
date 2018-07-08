@@ -30,7 +30,6 @@ class HistoryMemberVC: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        
     }
     
     func getImage() {
@@ -38,11 +37,11 @@ class HistoryMemberVC: BaseVC {
         guard let imageDetail = detailModel?.member?.image else { return }
         
         guard let url = URL(string: imageDetail) else {
-            memberImage.image = UIImage(named: "cherprang")
+            memberImage.image = UIImage(named: "notnetwork")
             return
         }
-        let data = try? Data(contentsOf: url)
-        memberImage.image = UIImage(data: data!)
+        guard let data = try? Data(contentsOf: url) else { return }
+        memberImage.image = UIImage(data: data)
     }
 }
 

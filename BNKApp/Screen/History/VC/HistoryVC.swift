@@ -14,17 +14,17 @@ protocol HistoryVCProtocol: BaseVCProtocol {
 
 class HistoryVC: BaseVC {
     
+    var listHistoryBNK: [String] = []
     lazy var presenter = HistoryPresenter(self)
     lazy var router = HistoryRouter(self)
     @IBOutlet weak var historyTableView: UITableView!
-    let listHistoryBNK: [String] = ["cherprang", "noey"]
-    let pullRefresh = UIRefreshControl()
+    let listData = ListData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         historyTableView.dataSource = self
         historyTableView.delegate = self
-        setup()
+        listHistoryBNK = listData.listItem
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,14 +37,6 @@ class HistoryVC: BaseVC {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    func setup() {
-        pullRefresh.addTarget(self, action: #selector(refreshTable), for: .valueChanged)
-    }
-    
-    @objc func refreshTable() {
-        historyTableView.reloadData()
     }
 }
 

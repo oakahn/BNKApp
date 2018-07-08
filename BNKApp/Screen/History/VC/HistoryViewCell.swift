@@ -16,8 +16,23 @@ class HistoryViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setStyleImage()
+        setStyleUIView()
+        setStypeName()
+    }
+    
+    func setStyleImage() {
+        historyImage.layer.cornerRadius = 2.0
+    }
+    
+    func setStyleUIView() {
         uiView.backgroundColor = UIColor.bnkColor
         uiView.layer.cornerRadius = 5.0
+    }
+    
+    func setStypeName() {
+        nameCell.font = UIFont.kanitRegular10
+        nameCell.textColor = UIColor.white
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

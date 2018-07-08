@@ -15,6 +15,7 @@ protocol HomeVCProtocol: BaseVCProtocol {
 
 class HomeVC: BaseVC {
     
+    let refresh = UIRefreshControl()
     lazy var presenter = HomePresenter(self)
     @IBOutlet weak var eventListTable: UITableView!
     var listItem: [EventDetail] = []
@@ -23,6 +24,16 @@ class HomeVC: BaseVC {
         super.viewDidLoad()
         eventListTable.delegate = self
         eventListTable.dataSource = self
+        setup()
+    }
+    
+    func setup() {
+        refresh.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        eventListTable.addSubview(refresh)
+    }
+    
+    @objc func refreshData() {
+        presenter.getDetailHomeService()
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,6 +47,7 @@ class HomeVC: BaseVC {
 
 extension HomeVC: HomeVCProtocol, UITableViewDelegate, UITableViewDataSource {
     func getDetailEventBNK(_ list: [EventDetail]) {
+        refresh.endRefreshing()
         listItem = list
         eventListTable.reloadData()
     }

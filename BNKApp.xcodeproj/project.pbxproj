@@ -12,6 +12,9 @@
 		9C1671D920E33B43002ED8B6 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1671D820E33B43002ED8B6 /* HistoryVC.swift */; };
 		9C1671DB20E33BBA002ED8B6 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1671DA20E33BBA002ED8B6 /* HistoryPresenter.swift */; };
 		9C1671DD20E341C4002ED8B6 /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1671DC20E341C4002ED8B6 /* HistoryViewCell.swift */; };
+		9C1B2D0C20F20F910033430E /* UpdateImageMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B2D0B20F20F910033430E /* UpdateImageMember.storyboard */; };
+		9C1B2D0E20F20FAD0033430E /* UpdateImageMemberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B2D0D20F20FAD0033430E /* UpdateImageMemberVC.swift */; };
+		9C1B2D1120F211460033430E /* UpdateInstagramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B2D1020F211460033430E /* UpdateInstagramModel.swift */; };
 		9C1F11E820E2906100BA158E /* ListEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F11E720E2906100BA158E /* ListEventCell.swift */; };
 		9C2DE5AF20EF60500063AFE0 /* GetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2DE5AE20EF60500063AFE0 /* GetImage.swift */; };
 		9C465DA820E394BE009FDD11 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C465DA720E394BE009FDD11 /* HomeTabBar.swift */; };
@@ -74,6 +77,9 @@
 		9C1671D820E33B43002ED8B6 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		9C1671DA20E33BBA002ED8B6 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
 		9C1671DC20E341C4002ED8B6 /* HistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
+		9C1B2D0B20F20F910033430E /* UpdateImageMember.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpdateImageMember.storyboard; sourceTree = "<group>"; };
+		9C1B2D0D20F20FAD0033430E /* UpdateImageMemberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateImageMemberVC.swift; sourceTree = "<group>"; };
+		9C1B2D1020F211460033430E /* UpdateInstagramModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInstagramModel.swift; sourceTree = "<group>"; };
 		9C1F11E720E2906100BA158E /* ListEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventCell.swift; sourceTree = "<group>"; };
 		9C2DE5AE20EF60500063AFE0 /* GetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImage.swift; sourceTree = "<group>"; };
 		9C465DA720E394BE009FDD11 /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
@@ -192,6 +198,31 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		9C1B2D0820F20F3C0033430E /* UpdateImageMember */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B2D0920F20F610033430E /* VC */,
+				9C1B2D0B20F20F910033430E /* UpdateImageMember.storyboard */,
+			);
+			path = UpdateImageMember;
+			sourceTree = "<group>";
+		};
+		9C1B2D0920F20F610033430E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B2D0D20F20FAD0033430E /* UpdateImageMemberVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		9C1B2D0F20F211240033430E /* UpdateInstagramModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B2D1020F211460033430E /* UpdateInstagramModel.swift */,
+			);
+			path = UpdateInstagramModel;
+			sourceTree = "<group>";
+		};
 		9C2DE5AD20EF601E0063AFE0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +234,7 @@
 		9C4A3F5020E13E3B005E3625 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9C1B2D0820F20F3C0033430E /* UpdateImageMember */,
 				9CF7358C20EE4C2700FC547A /* HistoryMember */,
 				9C1671D220E33AC7002ED8B6 /* History */,
 				9C74F38020E1FA6E005619DE /* Home */,
@@ -373,6 +405,7 @@
 		9CBF7CAF20E0C9E400BFAC2F /* dataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9C1B2D0F20F211240033430E /* UpdateInstagramModel */,
 				9C74F38A20E21E9F005619DE /* EventBNK */,
 				9CFB8F0720E111FA00D96731 /* History */,
 			);
@@ -516,6 +549,7 @@
 				9CBF7CA320E0C43A00BFAC2F /* Main.storyboard in Resources */,
 				9C4A3F8F20E143F8005E3625 /* Kanit-Regular.ttf in Resources */,
 				9C4A3F8A20E143F8005E3625 /* Kanit-Black.ttf in Resources */,
+				9C1B2D0C20F20F910033430E /* UpdateImageMember.storyboard in Resources */,
 				9CF7359120EE4C6900FC547A /* HistoryMember.storyboard in Resources */,
 				9C4A3F8920E143F8005E3625 /* Kanit-SemiBoldItalic.ttf in Resources */,
 			);
@@ -584,6 +618,8 @@
 				9C74F38720E1FAD6005619DE /* HomeVC.swift in Sources */,
 				9CF7359520EE4CD900FC547A /* HistoryMemberPresenter.swift in Sources */,
 				9C465DA820E394BE009FDD11 /* HomeTabBar.swift in Sources */,
+				9C1B2D1120F211460033430E /* UpdateInstagramModel.swift in Sources */,
+				9C1B2D0E20F20FAD0033430E /* UpdateImageMemberVC.swift in Sources */,
 				9C74F38C20E21EB0005619DE /* EventBNK.swift in Sources */,
 				9CE5749720F0E3450055100E /* HomeRouter.swift in Sources */,
 				9C4A3F6520E13FDA005E3625 /* BaseRouter.swift in Sources */,

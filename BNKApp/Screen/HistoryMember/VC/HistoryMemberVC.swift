@@ -33,9 +33,7 @@ class HistoryMemberVC: BaseVC {
     }
     
     func getImage() {
-        
         guard let imageDetail = detailModel?.member?.image else { return }
-        
         guard let url = URL(string: imageDetail) else {
             memberImage.image = UIImage(named: "notnetwork")
             return

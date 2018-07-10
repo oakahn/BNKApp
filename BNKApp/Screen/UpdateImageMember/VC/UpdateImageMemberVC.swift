@@ -14,6 +14,8 @@ protocol UpdateImageMemberProtocol: BaseVCProtocol {
 
 class UpdateImageMemberVC: BaseVC {
     
+    lazy var presenter = UpdateImageMemberPresenter(self)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

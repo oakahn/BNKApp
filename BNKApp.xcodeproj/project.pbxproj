@@ -18,6 +18,7 @@
 		9C1F11E820E2906100BA158E /* ListEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1F11E720E2906100BA158E /* ListEventCell.swift */; };
 		9C2DE5AF20EF60500063AFE0 /* GetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2DE5AE20EF60500063AFE0 /* GetImage.swift */; };
 		9C2E78AF20F4517200B91C8B /* UpdateImageMemberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E78AE20F4517200B91C8B /* UpdateImageMemberPresenter.swift */; };
+		9C2E78B420F47B7C00B91C8B /* UpdateImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E78B320F47B7C00B91C8B /* UpdateImageCell.swift */; };
 		9C465DA820E394BE009FDD11 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C465DA720E394BE009FDD11 /* HomeTabBar.swift */; };
 		9C4A3F5620E13EA9005E3625 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4A3F5520E13EA9005E3625 /* SplashScreen.storyboard */; };
 		9C4A3F5820E13F13005E3625 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4A3F5720E13F13005E3625 /* SplashScreenVC.swift */; };
@@ -84,6 +85,7 @@
 		9C1F11E720E2906100BA158E /* ListEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEventCell.swift; sourceTree = "<group>"; };
 		9C2DE5AE20EF60500063AFE0 /* GetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImage.swift; sourceTree = "<group>"; };
 		9C2E78AE20F4517200B91C8B /* UpdateImageMemberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateImageMemberPresenter.swift; sourceTree = "<group>"; };
+		9C2E78B320F47B7C00B91C8B /* UpdateImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateImageCell.swift; sourceTree = "<group>"; };
 		9C465DA720E394BE009FDD11 /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
 		9C4A3F5520E13EA9005E3625 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		9C4A3F5720E13F13005E3625 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				9C1B2D0D20F20FAD0033430E /* UpdateImageMemberVC.swift */,
+				9C2E78B320F47B7C00B91C8B /* UpdateImageCell.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -640,6 +643,7 @@
 				9C1671DB20E33BBA002ED8B6 /* HistoryPresenter.swift in Sources */,
 				9C4A3F6320E13FDA005E3625 /* LoadingXibView.swift in Sources */,
 				9CBF7CB120E0CA4200BFAC2F /* HistoryName.swift in Sources */,
+				9C2E78B420F47B7C00B91C8B /* UpdateImageCell.swift in Sources */,
 				9C2DE5AF20EF60500063AFE0 /* GetImage.swift in Sources */,
 				9CFB8F0920E1130D00D96731 /* HistoryInfo.swift in Sources */,
 				9CF7358B20EE4B5700FC547A /* HistoryRouter.swift in Sources */,

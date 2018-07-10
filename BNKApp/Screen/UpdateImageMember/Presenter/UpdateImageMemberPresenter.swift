@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import ObjectMapper
 
 protocol UpdateImageMemberPresenterProtocol {
     func updateImageMember(nameMember: String)
@@ -28,7 +29,10 @@ extension UpdateImageMemberPresenter: UpdateImageMemberPresenterProtocol {
         if (nameMember != "") { lastURL = nameMember + ".bnk48official" }
         let url = "https://www.api.bnk48.com/api/social-feeds?page=1&max=1529538001000&limit=10&username=" + lastURL
         Alamofire.request(url).responseJSON { (res) in
-            
+            guard let detail = Mapper<UpdateInstagramModel>().map(JSONObject: res.result.value) else {
+                return
+            }
+            self.view?.getImageSuccess(detail: detail)
         }
     }
 }

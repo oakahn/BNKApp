@@ -23,6 +23,10 @@ class UpdateImageMemberVC: BaseVC {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    func setup() {
+        presenter.updateImageMember(nameMember: "")
+    }
 }
 
 extension UpdateImageMemberVC: UpdateImageMemberProtocol {

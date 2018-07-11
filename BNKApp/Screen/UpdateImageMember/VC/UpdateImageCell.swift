@@ -12,6 +12,7 @@ class UpdateImageCell: UITableViewCell {
 
     @IBOutlet weak var instagramImage: UIImageView!
     @IBOutlet weak var officeLabel: UILabel!
+    @IBOutlet weak var instagramTitle: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,6 +26,11 @@ class UpdateImageCell: UITableViewCell {
 
     func styleLabel() {
         officeLabel.layer.cornerRadius = 6.0
+        officeLabel.backgroundColor = UIColor.black
+    }
+    
+    func styleInstagramTitle() {
+        instagramTitle.font = UIFont.kanitRegular10
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

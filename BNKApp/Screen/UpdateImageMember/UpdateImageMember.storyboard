@@ -31,26 +31,35 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aq3-fj-GoQ">
-                                                    <rect key="frame" x="17" y="10.5" width="341" height="230.5"/>
+                                                    <rect key="frame" x="24.5" y="9.5" width="326" height="221.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6c6-ZP-YHG">
-                                                    <rect key="frame" x="306" y="210" width="42" height="21"/>
+                                                    <rect key="frame" x="298.5" y="200" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I72-pb-HPH">
+                                                    <rect key="frame" x="166" y="245.5" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="aq3-fj-GoQ" firstAttribute="height" secondItem="zmb-Oe-8Fy" secondAttribute="height" multiplier="1:1.2" id="1z6-FE-SBP"/>
+                                                <constraint firstItem="aq3-fj-GoQ" firstAttribute="height" secondItem="zmb-Oe-8Fy" secondAttribute="height" multiplier="1:1.25" id="1z6-FE-SBP"/>
                                                 <constraint firstItem="6c6-ZP-YHG" firstAttribute="bottom" secondItem="aq3-fj-GoQ" secondAttribute="bottom" constant="-10" id="5bk-7f-hus"/>
+                                                <constraint firstItem="I72-pb-HPH" firstAttribute="centerX" secondItem="zmb-Oe-8Fy" secondAttribute="centerX" id="Zyz-nm-Vmx"/>
                                                 <constraint firstItem="6c6-ZP-YHG" firstAttribute="trailing" secondItem="aq3-fj-GoQ" secondAttribute="trailing" constant="-10" id="ja1-GB-Hhn"/>
-                                                <constraint firstItem="aq3-fj-GoQ" firstAttribute="width" secondItem="zmb-Oe-8Fy" secondAttribute="width" multiplier="1:1.1" id="uCW-rF-jhi"/>
+                                                <constraint firstItem="aq3-fj-GoQ" firstAttribute="width" secondItem="zmb-Oe-8Fy" secondAttribute="width" multiplier="1:1.15" id="uCW-rF-jhi"/>
                                                 <constraint firstItem="aq3-fj-GoQ" firstAttribute="centerX" secondItem="zmb-Oe-8Fy" secondAttribute="centerX" id="uyJ-h4-CPy"/>
-                                                <constraint firstItem="aq3-fj-GoQ" firstAttribute="centerY" secondItem="zmb-Oe-8Fy" secondAttribute="centerY" multiplier="1:1.1" id="xTM-RV-3KD"/>
+                                                <constraint firstItem="I72-pb-HPH" firstAttribute="centerY" secondItem="zmb-Oe-8Fy" secondAttribute="centerY" multiplier="1:0.54" id="vKo-SA-6LX"/>
+                                                <constraint firstItem="aq3-fj-GoQ" firstAttribute="centerY" secondItem="zmb-Oe-8Fy" secondAttribute="centerY" multiplier="1:1.15" id="xTM-RV-3KD"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="instagramImage" destination="aq3-fj-GoQ" id="qdY-AW-t0w"/>
+                                            <outlet property="instagramTitle" destination="I72-pb-HPH" id="zWf-er-Lft"/>
                                             <outlet property="officeLabel" destination="6c6-ZP-YHG" id="y5U-Ir-Xn7"/>
                                         </connections>
                                     </tableViewCell>

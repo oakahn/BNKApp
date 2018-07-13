@@ -11,7 +11,7 @@ import ObjectMapper
 
 class UpdateInstagramModel: Mappable {
     
-    var getFeeds: [feedsDetail]?
+    var getFeeds: [FeedsDetail]?
     
     required init?(map: Map) {}
     
@@ -20,7 +20,7 @@ class UpdateInstagramModel: Mappable {
     }
 }
 
-class feedsDetail: Mappable {
+class FeedsDetail: Mappable {
     
     var username: String?
     var title: String?

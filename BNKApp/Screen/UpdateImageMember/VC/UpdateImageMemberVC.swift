@@ -16,6 +16,7 @@ class UpdateImageMemberVC: BaseVC {
     
     lazy var presenter = UpdateImageMemberPresenter(self)
     @IBOutlet weak var updateImageTable: UITableView!
+    var detailInstagram: UpdateInstagramModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,7 @@ class UpdateImageMemberVC: BaseVC {
 
 extension UpdateImageMemberVC: UpdateImageMemberProtocol {
     func getImageSuccess(detail: UpdateInstagramModel) {
+        detailInstagram = detail
         updateImageTable.reloadData()
         hideLoading()
     }
@@ -50,7 +52,8 @@ extension UpdateImageMemberVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? UpdateImageCell else {
             return UITableViewCell()
         }
-        cell.textLabel?.text = ""
+        cell.officeLabel.text = ""
+        cell.instagramImage.image = UIImage(named: (detailInstagram?.getFeeds![indexPath.row].image)!)
         return UITableViewCell()
     }
 }

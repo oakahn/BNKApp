@@ -43,7 +43,12 @@ extension UpdateImageMemberVC: UpdateImageMemberProtocol {
 extension UpdateImageMemberVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        guard let getData = detailInstagram?.getFeeds else { return 0 }
+        return getData.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 280.0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

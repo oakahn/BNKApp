@@ -20,6 +20,10 @@ class UpdateImageCell: UITableViewCell {
         styleLabel()
     }
     
+    func setup() {
+        
+    }
+    
     func styleImage() {
         instagramImage.layer.cornerRadius = 2.0
     }

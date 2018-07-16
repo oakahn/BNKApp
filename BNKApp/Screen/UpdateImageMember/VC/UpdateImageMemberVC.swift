@@ -22,16 +22,14 @@ class UpdateImageMemberVC: BaseVC {
         super.viewDidLoad()
         updateImageTable.delegate = self
         updateImageTable.dataSource = self
+        displayLoading(message: "", hasBg: true)
+        presenter.updateImageMember(nameMember: "")
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        displayLoading(message: "", hasBg: true)
-        presenter.updateImageMember(nameMember: "")
-    }
+
 }
 
 extension UpdateImageMemberVC: UpdateImageMemberProtocol {
@@ -52,8 +50,21 @@ extension UpdateImageMemberVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? UpdateImageCell else {
             return UITableViewCell()
         }
-        cell.officeLabel.text = ""
-        cell.instagramImage.image = UIImage(named: (detailInstagram?.getFeeds![indexPath.row].image)!)
+        guard let getData = detailInstagram?.getFeeds else {
+            return UITableViewCell()
+        }
+        guard let getImage = getData[indexPath.row].image else {
+            return UITableViewCell()
+        }
+        cell.instagramImage.image = UIImage(named: getImage)
+        cell.officeLabel.text = getData[indexPath.row].username
+        cell.instagramTitle.text = getData[indexPath.row].title
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let getData = detailInstagram?.getFeeds else { return }
+        guard let link = getData[indexPath.row].url else { return }
+        presenter.goToLinkInstagram(name: link)
     }
 }

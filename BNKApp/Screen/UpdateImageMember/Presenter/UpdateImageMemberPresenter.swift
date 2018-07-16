@@ -12,6 +12,7 @@ import ObjectMapper
 
 protocol UpdateImageMemberPresenterProtocol {
     func updateImageMember(nameMember: String)
+    func goToLinkInstagram(name: String)
 }
 
 class UpdateImageMemberPresenter {
@@ -24,10 +25,15 @@ class UpdateImageMemberPresenter {
 }
 
 extension UpdateImageMemberPresenter: UpdateImageMemberPresenterProtocol {
+    func goToLinkInstagram(name: String) {
+        guard let instagramUrl = URL(string: name) else { return }
+        UIApplication.shared.canOpenURL(instagramUrl) ? UIApplication.shared.openURL(instagramUrl) : UIApplication.shared.openURL(NSURL(string: name)! as URL)
+    }
+    
     func updateImageMember(nameMember: String) {
         var lastURL: String = ""
         if (nameMember != "") { lastURL = nameMember + ".bnk48official" }
-        let url = "https://www.api.bnk48.com/api/social-feeds?page=1&max=1529538001000&limit=10&username=" + lastURL
+        let url = "https://www.api.bnk48.com/api/social-feeds?page=1&max=1529538001000&limit=5&username=" + lastURL
         Alamofire.request(url).responseJSON { (res) in
             guard let detail = Mapper<UpdateInstagramModel>().map(JSONObject: res.result.value) else {
                 return

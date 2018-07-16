@@ -55,12 +55,8 @@ extension UpdateImageMemberVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? UpdateImageCell else {
             return UITableViewCell()
         }
-        guard let getData = detailInstagram?.getFeeds else {
-            return UITableViewCell()
-        }
-        guard let getImage = getData[indexPath.row].image else {
-            return UITableViewCell()
-        }
+        guard let getData = detailInstagram?.getFeeds else { return UITableViewCell() }
+        guard let getImage = getData[indexPath.row].image else { return UITableViewCell() }
         cell.instagramImage.image = UIImage(named: getImage)
         cell.officeLabel.text = getData[indexPath.row].username
         cell.instagramTitle.text = getData[indexPath.row].title

@@ -58,10 +58,26 @@ extension UpdateImageMemberVC: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         guard let getData = detailInstagram?.getFeeds else { return UITableViewCell() }
-        guard let dataImage = dataImage else { return UITableViewCell () }
-        cell.instagramImage.image = UIImage(data: dataImage[indexPath.row])
+//        guard let dataImage = dataImage else { return UITableViewCell () }
+//        cell.instagramImage.image = UIImage(data: dataImage[indexPath.row])
         cell.officeLabel.text = getData[indexPath.row].username
         cell.instagramTitle.text = getData[indexPath.row].title
+        guard let link = getData[indexPath.row].url else {
+            return UITableViewCell() }
+        guard let URL = URL(string: link) else {
+            return UITableViewCell() }
+        URLSession.shared.dataTask(with: URL, completionHandler: { (data, response, error) -> Void in
+//            if error == nil {
+//                print(error ?? "")
+//                return
+//            }
+            DispatchQueue.main.async(execute: { () -> Void in
+                guard let checkData = data else { return }
+                cell.instagramImage.image = UIImage(data: checkData)
+            })
+            
+        }).resume()
+        
         return cell
     }
     

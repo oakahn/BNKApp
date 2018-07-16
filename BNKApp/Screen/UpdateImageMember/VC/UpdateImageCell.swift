@@ -18,6 +18,7 @@ class UpdateImageCell: UITableViewCell {
         super.awakeFromNib()
         styleImage()
         styleLabel()
+        styleInstagramTitle()
     }
     
     func setup() {
@@ -29,6 +30,7 @@ class UpdateImageCell: UITableViewCell {
     }
 
     func styleLabel() {
+        officeLabel.textColor = UIColor.white
         officeLabel.layer.cornerRadius = 6.0
         officeLabel.backgroundColor = UIColor.black
     }

@@ -13,6 +13,7 @@ import ObjectMapper
 protocol UpdateImageMemberPresenterProtocol {
     func updateImageMember(nameMember: String)
     func goToLinkInstagram(name: String)
+    func loadingImage(image: UpdateInstagramModel) -> [Data]
 }
 
 class UpdateImageMemberPresenter {
@@ -40,5 +41,18 @@ extension UpdateImageMemberPresenter: UpdateImageMemberPresenterProtocol {
             }
             self.view?.getImageSuccess(detail: detail)
         }
+    }
+    
+    func loadingImage(image: UpdateInstagramModel) -> [Data] {
+        var listData: [Data]? = []
+        guard let imageFeed = image.getFeeds else { return [Data]() }
+        for item in imageFeed {
+            guard let itemCheck = item.image else { return [Data]() }
+            guard let url = URL(string: itemCheck) else { return [Data]() }
+            guard let data = try? Data(contentsOf: url) else { return [Data]() }
+            listData?.append(data)
+        }
+        guard let list = listData else { return [Data]() }
+        return list
     }
 }

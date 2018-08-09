@@ -41,7 +41,7 @@ class HomeVC: BaseVC {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        presenter.getDetailHomeService()
+        presenter.getDetailHomeService()
     }
 }
 

@@ -31,10 +31,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aq3-fj-GoQ">
-                                                    <rect key="frame" x="24.5" y="9.5" width="326" height="221.5"/>
+                                                    <rect key="frame" x="63" y="9.5" width="250" height="221.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6c6-ZP-YHG">
-                                                    <rect key="frame" x="298.5" y="200" width="42" height="21"/>
+                                                    <rect key="frame" x="261" y="200" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -53,7 +53,7 @@
                                                 <constraint firstItem="I72-pb-HPH" firstAttribute="leading" secondItem="zmb-Oe-8Fy" secondAttribute="leading" constant="5" id="hws-Iu-b0O"/>
                                                 <constraint firstItem="6c6-ZP-YHG" firstAttribute="trailing" secondItem="aq3-fj-GoQ" secondAttribute="trailing" constant="-10" id="ja1-GB-Hhn"/>
                                                 <constraint firstAttribute="trailing" secondItem="I72-pb-HPH" secondAttribute="trailing" constant="5" id="nOf-oI-mWF"/>
-                                                <constraint firstItem="aq3-fj-GoQ" firstAttribute="width" secondItem="zmb-Oe-8Fy" secondAttribute="width" multiplier="1:1.15" id="uCW-rF-jhi"/>
+                                                <constraint firstItem="aq3-fj-GoQ" firstAttribute="width" secondItem="zmb-Oe-8Fy" secondAttribute="width" multiplier="1:1.5" id="uCW-rF-jhi"/>
                                                 <constraint firstItem="aq3-fj-GoQ" firstAttribute="centerX" secondItem="zmb-Oe-8Fy" secondAttribute="centerX" id="uyJ-h4-CPy"/>
                                                 <constraint firstItem="I72-pb-HPH" firstAttribute="centerY" secondItem="zmb-Oe-8Fy" secondAttribute="centerY" multiplier="1:0.54" id="vKo-SA-6LX"/>
                                                 <constraint firstItem="aq3-fj-GoQ" firstAttribute="centerY" secondItem="zmb-Oe-8Fy" secondAttribute="centerY" multiplier="1:1.15" id="xTM-RV-3KD"/>

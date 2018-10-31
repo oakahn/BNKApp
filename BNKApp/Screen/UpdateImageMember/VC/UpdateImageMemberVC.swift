@@ -7,6 +7,7 @@
 //
 
 import UIKit
+// master
 
 protocol UpdateImageMemberProtocol: BaseVCProtocol {
     func getImageSuccess(detail: UpdateInstagramModel)
